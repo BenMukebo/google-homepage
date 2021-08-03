@@ -67,7 +67,7 @@ header .nav {
 }
 
 main {
-  background: var(--primary);
+  /* background: var(--primary); */
   width: 100vw;
   height: 100%;
   display: flex;
@@ -81,15 +81,16 @@ main {
 }
 .searchbar {
   height: 3.6rem;
-  min-width: 420px;
+  min-width: 450px;
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
   border-radius: 30px;
-
-  border: 1px solid rgba(128, 128, 128, 0.287);
+  /* border: 1px solid rgba(128, 128, 128, 0.287); */
+  border: 1px solid #dfe1e5;
+  transition: all 0.1s;
 }
 .searchbar input {
   width: 90%;
@@ -106,4 +107,25 @@ main {
   opacity: 0.5;
   font-weight: 300;
   padding: 0 20px;
+}
+.searchbar:hover {
+  box-shadow: 0 0 5px 3px var(--primary);
+}
+
+.input-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+.input-btns input {
+  margin: 0 10px;
+  border: none;
+  height: 35px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+.input-btns input:hover {
+  border: 1px solid #dadce0;
 }
