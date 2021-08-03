@@ -3,12 +3,65 @@
   margin: 0;
   padding: 0;
 }
-html {
-  --primary: #222;
+:root {
+  /* --primary: #222; */
+  --primary: #eee;
 }
 body {
   font-family: arial, sans-serif;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   font-size: 14px;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  /* padding: 10px; */
+  /* background: rebeccapurple; */
+}
+
+header .nav {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  /* height: 40px; */
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+}
+.nav a {
+  display: inline-block;
+  /* background-color: aqua; */
+  padding: 10px;
+  margin: 0 3px;
+  text-decoration: none;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+.nav a:last-child {
+  padding: 2px;
+}
+.nav a img {
+  line-height: 40px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.nav a img.apps {
+  width: 28px;
+  height: 28px;
+  color: #5f6368;
+  border-radius: 50%;
+}
+.nav a img.apps:hover {
+  box-shadow: 0px 0px 1px 7px var(--primary);
+  background: var(--primary);
+}
+.nav a img.profile:hover {
+  box-shadow: 0px 0px 1px 5px var(--primary);
 }
