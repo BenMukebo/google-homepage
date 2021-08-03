@@ -176,3 +176,14 @@ footer p {
 .footer a:hover {
   text-decoration: underline;
 }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 10px;
+  }
+}
