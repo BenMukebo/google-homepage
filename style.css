@@ -121,11 +121,25 @@ main {
 .input-btns input {
   margin: 0 10px;
   border: none;
-  height: 35px;
+  height: 40px;
   width: 150px;
   border-radius: 5px;
   background-color: #f8f9fa;
+  color: #3c4043;
 }
 .input-btns input:hover {
   border: 1px solid #dadce0;
+}
+.lang {
+  color: #3c4043;
+  line-height: 28px;
+}
+.lang a {
+  padding: 0 5px;
+  cursor: pointer;
+  color: #1a0dab;
+  text-decoration: none;
+}
+.lang a:hover {
+  text-decoration: underline;
 }
